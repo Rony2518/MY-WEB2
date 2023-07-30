@@ -214,15 +214,12 @@ span {
     .navbar {
         position: absolute;
         top: 100%;
+        left: 0%;
         width: 100%;
         background-color: var(--nav-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: all .50s ease;
         display: none;
-        /* box-shadow: 0 0 25px 0 rgb(49, 48, 48); */
-        /* backdrop-filter: blur(20px); */
+        transition: all 0.5s ease;
+        border: 1px solid gray;
     }
 
     .navbar a {
