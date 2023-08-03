@@ -1,22 +1,19 @@
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-let info = document.querySelector('.info');
+let intro = document.querySelector('.intro');
+let projects = document.querySelector('.wrapper');
 
 menu.onclick = () => {
     menu.classList.toggle('fa-x');
     navbar.classList.toggle('open');
-    info.classList.toggle('shift-down1');
+    intro.classList.toggle('shift-down1');
+    projects.classList.toggle('shift-down2');
 }
 
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the necessary elements
     var contact = document.querySelector(".contact");
     var menuIcon = document.getElementById("menu-icon");
-
-    // Add event listener to the menu icon
     menuIcon.addEventListener("click", function () {
-        // Toggle the active class on the contact element
         contact.classList.toggle("active");
     });
 });
